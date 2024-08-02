@@ -41,7 +41,7 @@ const Navegacion = ({ children }) => {
     </ul>
   </nav>
   <aside className="main-sidebar sidebar-dark-primary elevation-4">
-    <Link to="../../index3.html" className="brand-link">
+    <Link to="/Index" className="brand-link">
       <img src="../../dist/img/SuperAlimento.png"className="brand-image img-circle elevation-3" style={{opacity: '.8'}} />
       <span className="brand-text font-weight-light">SuperAlimento</span>
     </Link>
