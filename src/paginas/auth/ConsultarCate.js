@@ -1,10 +1,13 @@
-import React, { Fragment } from "react";
+import useDataTable from '../../hooks/useDataTable';
+import React, { useRef } from 'react';
 import Navegacion from "../../componentes/componentes/navegacion"; // Importa el componente correctamente
 import "../../componentes/css/Login.css";
 import { Link } from "react-router-dom";
 
 
 const ConsultarCate = () => {
+    const tableRef1 = useRef(null);
+    useDataTable(tableRef1);
   return (
     <div>
         <Navegacion>
@@ -15,19 +18,9 @@ const ConsultarCate = () => {
                         <div className="card">
                             <div className="card-header">
                                 <h3 className="card-title">Categorias</h3>
-                                <div className="card-tools">
-                                    <div className="input-group input-group-sm" style={{width: 150}}>
-                                        <input type="text" name="table_search" className="form-control float-right" placeholder="Search" />
-                                        <div className="input-group-append">
-                                            <button type="submit" className="btn btn-default custom-button">
-                                            <i className="fas fa-search" />
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                             <div className="card-body table-responsive p-0">
-                                <table className="table table-hover text-nowrap">
+                                <table ref={tableRef1} className="table table-hover text-nowrap">
                                     <thead>
                                         <tr>
                                             <th>Id de Categoría</th>
