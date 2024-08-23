@@ -1,7 +1,7 @@
-import React, { Fragment } from "react";
-import Navegacion from "../../componentes/componentes/navegacion"; // Importa el componente correctamente
-import "../../componentes/css/Login.css";
-import { Link } from "react-router-dom";
+import React from "react";
+import Navegacion from "../componentes/componentes/navegacion"; // Importa el componente correctamente
+import "../componentes/css/Login.css";
+
 
 const Contacto = () => {
   return (

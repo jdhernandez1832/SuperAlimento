@@ -1,4 +1,3 @@
-import React, { Fragment } from "react";
 import Navegacion from "../../componentes/componentes/navegacion"; // Importa el componente correctamente
 import "../../componentes/css/Login.css";
 import { Link } from "react-router-dom";
@@ -8,7 +7,7 @@ const RegistrarProd = () => {
   return (
     <div>
         <Navegacion>
-            <div className="card card-success">
+        <div className="card card-success">
                 <div className="card-body colorFondo">
                     <div className="card card-success">
                         <div className="card-header">
@@ -21,16 +20,31 @@ const RegistrarProd = () => {
                                 <input type="text" className="form-control" id="NombreProducto" required />
                             </div>
                             <div className="form-group">
-                                <label htmlFor="DescripcionProducto">Descripcion de producto</label>
+                                <label htmlFor="CodigoProducto">Codigo de barras</label>
+                                <input type="Number" min={"0"} className="form-control" id="CodigoProducto" required />
+                            </div>
+                            <div className="form-group">
+                                <label htmlFor="PrecioComProducto">Precio de compra</label>
+                                <input type="Number" min={"0"} className="form-control" id="PrecioComProducto" required />
+                            </div>
+                            <div className="form-group">
+                                <label htmlFor="PrecioVenProducto">Precio de venta</label>
+                                <input type="Number" min={"0"} className="form-control" id="PrecioVenProducto" required />
+                            </div>
+                            <div className="form-group">
+                                <label htmlFor="DescripcionProducto">Descripcion</label>
                                 <input type="text" className="form-control" id="DescripcionProducto" required />
                             </div>
                             <div className="form-group">
                                 <label htmlFor="CantidadProducto">Cantidad</label>
-                                <input type="Number" min={"0"} className="form-control" id="CantidadProducto" required />
+                                <input type="Number" min={"0"} className="form-control" id="Cantidad" required />
                             </div>
-                            <div className="form-group">
-                                <label htmlFor="PrecioProducto">Precio unitario</label>
-                                <input type="Number" min={"0"} className="form-control" id="PrecioProducto" required />
+                            <div class="form-group">
+                                <label for="EstadoProducto">Estado</label>
+                                <select class="custom-select form-control-border border-width-2" id="EstadoProducto">
+                                    <option>Activo</option>
+                                    <option>Desactivo</option>
+                                </select>
                             </div>
                             <div class="form-group">
                                 <label for="CategoriaProducto">Categoria</label>
@@ -39,6 +53,10 @@ const RegistrarProd = () => {
                                     <option>Granos</option>
                                     <option>Aseo personal</option>
                                 </select>
+                            </div>
+                            <div className="form-group">
+                                <label htmlFor="ImagenProducto">Subir imagen</label>
+                                <input type="file" className="form-control" id="ImagenProducto" required />
                             </div>
                             <div className="card-footer">
                             <Link to="/ConsultarProd" className="btn btn-primary custom-button mr-2">Volver</Link>

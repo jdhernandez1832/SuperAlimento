@@ -1,10 +1,10 @@
-import React, { Fragment } from "react";
+import React from "react";
 import Navegacion from "../../componentes/componentes/navegacion"; // Importa el componente correctamente
 import "../../componentes/css/Login.css";
 import { Link } from "react-router-dom";
 
 
-const AceptarSoli = () => {
+const RegistrarSoli = () => {
   return (
     <div>
         <Navegacion>
@@ -12,14 +12,10 @@ const AceptarSoli = () => {
                 <div className="card-body colorFondo">
                     <div className="card card-success">
                         <div className="card-header">
-                            <h3 className="card-title">Aceptar solicitud</h3>
+                            <h3 className="card-title">Registrar solicitud</h3>
                         </div>
                         <form>
                             <div className="card-body">
-                            <div className="form-group">
-                                <label htmlFor="IdSolicitud">Id de solicitud</label>
-                                <input type="Number" min={"0"} className="form-control" id="IdSolicitud" required />
-                            </div>
                             <div className="form-group">
                                 <label htmlFor="NombreSolicitud">Nombre del producto</label>
                                 <input type="text" className="form-control" id="NombreSolicitud" required />
@@ -61,8 +57,8 @@ const AceptarSoli = () => {
                             </div>
                             </div>
                             <div className="card-footer">
-                                <Link to="/ConsultarSoli" className="btn btn-primary custom-button mr-2">Volver</Link>
-                                <button type="submit" className="btn btn-primary custom-button">Aceptar solicitud y agregar al invetario</button>
+                            <Link to="/ConsultarSoli" className="btn btn-primary custom-button mr-2">Volver</Link>
+                            <button type="submit" className="btn btn-primary custom-button">Registrar</button>
                             </div>
                         </form>
                     </div>
@@ -73,4 +69,5 @@ const AceptarSoli = () => {
   );
 }
 
-export default AceptarSoli;
+export default RegistrarSoli;
+

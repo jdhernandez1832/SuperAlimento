@@ -1,10 +1,10 @@
-import React, { Fragment } from "react";
+import React from "react";
 import Navegacion from "../../componentes/componentes/navegacion"; // Importa el componente correctamente
 import "../../componentes/css/Login.css";
 import { Link } from "react-router-dom";
 
 
-const RegistrarUsu = () => {
+const ActualizarUsu = () => {
   return (
     <div>
         <Navegacion>
@@ -12,7 +12,7 @@ const RegistrarUsu = () => {
                 <div className="card-body colorFondo">
                     <div className="card card-success">
                         <div className="card-header">
-                            <h3 className="card-title">Registrar Usuario</h3>
+                            <h3 className="card-title">Actualizar Usuario</h3>
                         </div>
                         <form>
                             <div className="card-body">
@@ -55,7 +55,7 @@ const RegistrarUsu = () => {
                             </div>
                             <div className="card-footer">
                             <Link to="/ConsultarUsu" className="btn btn-primary custom-button mr-2">Volver</Link>
-                            <button type="submit" className="btn btn-primary custom-button">Registrar</button>
+                            <button type="submit" className="btn btn-primary custom-button">Actualizar</button>
                             </div>
                         </form>
                     </div>
@@ -66,5 +66,5 @@ const RegistrarUsu = () => {
   );
 }
 
-export default RegistrarUsu;
+export default ActualizarUsu;
 

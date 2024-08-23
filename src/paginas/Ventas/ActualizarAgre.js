@@ -1,10 +1,10 @@
-import React, { Fragment } from "react";
+import React from "react";
 import Navegacion from "../../componentes/componentes/navegacion"; // Importa el componente correctamente
 import "../../componentes/css/Login.css";
 import { Link } from "react-router-dom";
 
 
-const AgregarProd = () => {
+const ActualizarAgre = () => {
   return (
     <div>
         <Navegacion>
@@ -14,7 +14,7 @@ const AgregarProd = () => {
                     <div className="col-12">
                         <div className="card">
                             <div className="card-header">
-                                <h3 className="card-title">Agregar productos a venta #</h3>
+                                <h3 className="card-title">Actualizar productos a venta #</h3>
                                 <div className="card-tools">
                                     <div className="input-group input-group-sm" style={{width: 150}}>
                                         <input type="text" name="table_search" className="form-control float-right" placeholder="Search" />
@@ -110,7 +110,7 @@ const AgregarProd = () => {
                             <div className="card-header">
                                 <Link to="/ConsultarVent" className="btn btn-primary custom-button mr-2">Volver</Link>
                                 <Link to="#" className="btn btn-primary custom-button">
-                                    Registrar venta
+                                    Actualizar venta
                                 </Link>
                             </div>
                         </div>
@@ -123,4 +123,4 @@ const AgregarProd = () => {
   );
 }
 
-export default AgregarProd ;
+export default ActualizarAgre ;

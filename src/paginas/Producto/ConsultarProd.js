@@ -6,6 +6,9 @@ import { Link } from "react-router-dom";
 
 
 
+
+
+
 const ConsultarProd = () => {
     const tableRef1 = useRef(null);
     useDataTable(tableRef1);
@@ -24,15 +27,13 @@ const ConsultarProd = () => {
                                 <table ref={tableRef1} className="table table-hover text-nowrap">
                                     <thead>
                                         <tr>
-                                            <th>Id de producto</th>
+                                            <th>Imagen</th>
                                             <th>Nombre de producto</th>
-                                            <th>Descripción</th>
+                                            <th>Codigo</th>
+                                            <th>Precio de compra</th>
+                                            <th>Precio de venta</th>
+                                            <th>Categoria</th>
                                             <th>Cantidad</th>
-                                            <th>Precio unitario</th>
-                                            <th>Precio total</th>
-                                            <th>Caducidad</th>
-                                            <th>Categoría</th>
-                                            <th>Registrado por</th>
                                             <th>Actualizar</th>
                                             <th>Eliminar</th>
                                         </tr>
@@ -41,13 +42,11 @@ const ConsultarProd = () => {
                                         <tr>
                                             <td>1</td>
                                             <td>Paquete de Arroz 500g</td>
-                                            <td>Paquete de Arroz 500g de la marca Diana</td>
-                                            <td>24</td>
-                                            <td>3000</td>
-                                            <td>72000</td>
-                                            <td>02/08/2024</td>
+                                            <td>8023894394034</td>
+                                            <td>2400</td>
+                                            <td>4800</td>
                                             <td>Granos</td>
-                                            <td>1075792381</td>
+                                            <td>120</td>
                                             <td><Link to="/ActualizarProd"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-pencil" viewBox="0 0 16 16">
                                                     <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325"/>
                                                     </svg>
@@ -77,5 +76,5 @@ const ConsultarProd = () => {
   );
 }
 
-export default ConsultarProd ;
 
+export default ConsultarProd ;

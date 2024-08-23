@@ -1,9 +1,9 @@
 
-import Navegacion from "../../componentes/componentes/navegacion"; 
-import "../../componentes/css/Login.css";
+import Navegacion from "../componentes/componentes/navegacion"; 
+import "../componentes/css/Login.css";
 import { Link } from "react-router-dom";
-import SalesChart from '../../componentes/componentes/ventas';
-import useDataTable from '../../hooks/useDataTable';
+import SalesChart from '../componentes/componentes/ventas';
+import useDataTable from '../hooks/useDataTable';
 import React, { useRef } from 'react';
 
 const Index = () => {
